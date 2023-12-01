@@ -9,3 +9,6 @@ An Adblock in the PfSense, no more need for Pi-Hole!!!
 set the script in your pfsense device, then type :
 
 <code>./pfsense_unbound_pihole.sh</code>
+
+- Add "include: /unbound/ad_servers.conf" in expert unbound configuration
+- Uncheck "Register DHCP static mapping in the DNS Resolver" and "Register DHCP leases in the DNS Resolver" for resolver restart fix
